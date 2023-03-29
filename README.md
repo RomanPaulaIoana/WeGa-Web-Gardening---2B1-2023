@@ -1,1 +1,3 @@
-# WeGa-Web-Gardening---2B1-Roman-Paula-si-Donea-Emilia
+# WeGa-Web-Gardening
+
+### Roman Paula, Donea Emilia și Vartolaș Timeea, grupa 2B1

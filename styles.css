@@ -1,0 +1,266 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #ffffff;
+}
+
+.header {
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    flex: 1;
+    text-align: start;
+  }
+
+.logo-img {
+    width: 200px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.side-header{
+    display: flex;
+    align-items: end;
+}
+ 
+.account-img{
+    width: 50px;
+    margin-top: auto;
+    margin-left: auto;
+    /* margin-bottom: 30px; */
+    cursor: pointer;
+}
+
+/* .shopping-cart-img{
+    width: 50px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    cursor: pointer;
+} */
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;  /*the height of 1 line of text*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    float: right;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border: 1px solid #dfe1e5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+
+}
+
+/* .btn {
+    margin-left: 4px;
+    margin-right: 4px;
+    background: #dfe1e5;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+} */
+  
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    margin: 0.5rem;
+}
+  
+a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+a:hover:not(.logo-a) {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .filter-btn{
+    background-color:#f2f2f2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0px;
+    font-size: 14px;
+    border-color:darkgray;
+    cursor:pointer;
+    margin: 10px;
+  }
+  .filter-btn:hover, .filter-btn:focus {
+    background-color:rgb(218, 152, 234);
+  }
+ /* The search field */
+ #filterInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  /* The search field when it gets focus/clicked on */
+  #filterInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .filter-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-fcontent {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-fcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-fcontent a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+
+
+
+  .sortby-btn{
+    background-color:#f2f2f2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0px;
+    font-size: 14px;
+    border-color:darkgray;
+    cursor:pointer;
+    margin: 10px;
+}
+
+  .sortby-btn:hover, .sortby-btn:focus {
+    background-color:rgb(218, 152, 234);
+  }
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .sortby-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  

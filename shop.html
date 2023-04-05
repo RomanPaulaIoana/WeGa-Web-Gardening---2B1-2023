@@ -15,8 +15,23 @@
                     <input class="search-input" type="text" placeholder="search"/>
 
                     <div class="side-header">
+                      <a href="LOGIN.html">
                         <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png">
-                        <!-- <img class="shopping-cart-img" src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"> -->
+                      </a>
+                      <div class="dropdown">
+                        <img class="not-img" src="not.png">
+                        <div class="dropdown-content">
+                          <a href="#">Notification 1</a>
+                          <a href="#">Notification 2</a>
+                          <a href="#">Notification 3</a>
+                        </div>
+                      </div>
+                      <div class="dropdown2">
+                        <img class="shopping-cart-img" src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png">
+                        <div class="dropdown-content2">
+                          <a href="#">The cart is empty</a>
+                        </div>
+                      </div>
                     </div>
                 </header>
             <!-- </div> -->
@@ -24,7 +39,7 @@
             <div class="menu">
                 <ul>
                   <li>
-                    <a href=https://www.google.com>H O M E</a>
+                    <a href=index.html>H O M E</a>
                   </li>
                   <li>
                     <a href=shop.html>S H O P</a>
@@ -33,12 +48,12 @@
                     <a href=about.html>A B O U T</a>
                   </li>
                   <li>
-                    <a href=https://www.google.com>H E L P</a>
+                    <a href=help.html>H E L P</a>
                   </li>
                 </ul>
-              </div>
-              
-              <div class="filter-dropdown">
+            </div>
+        </div>   
+            <div class="filter-dropdown">
                 <button onclick="FilterFunction()" class="filter-btn">FILTER</button>
                 <div id="filterDropdown" class="dropdown-fcontent">
                   <input type="text" placeholder="Search.." id="filterInput" onkeyup="filterFunction()">
@@ -46,9 +61,9 @@
                   <a href="#rating">Rating</a>
         
                 </div>
-              </div>
+            </div>
 
-              <script>
+            <script>
                 /* When the user clicks on the button,
                 toggle between hiding and showing the dropdown content */
                 function FilterFunction() {
@@ -72,18 +87,18 @@
                 }
             </script>
 
-              <div class="sortby-dropdown">
+            <div class="sortby-dropdown">
                 <button onclick="myFunction()" class="sortby-btn">SORT BY</button>
-                <div id="myDropdown" class="dropdown-content">
+                <div id="myDropdown" class="dropdown-scontent">
                   <input type="text" placeholder="Search.." id="myInput" onkeyup="sortFunction()">
                   <a href="#price low to high">Price:Low to High</a>
                   <a href="#price high to low">Price:High to Low</a>
                   <a href="#best sellers">Best Sellers</a>
                   <a href="#newest">Newest</a>
                 </div>
-              </div>
+            </div>
 
-              <script>
+            <script>
                 /* When the user clicks on the button,
                 toggle between hiding and showing the dropdown content */
                 function myFunction() {

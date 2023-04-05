@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #ffffff;
+}
+
+.header {
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    flex: 1;
+    text-align: start;
+  }
+
+.logo-img {
+    width: 200px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.side-header{
+  display: flex;
+  align-items: end;
+}
+
+.account-img{
+  width: 50px;
+  margin: 20px 10px 0 20px;
+  cursor: pointer;
+}
+
+.shopping-cart-img{
+  width: 50px;
+  margin: 20px 30px 8px 20px;
+  cursor: pointer;
+}
+.not-img{
+  width: 40px;
+  margin: 20px 5px 12px 20px;
+  cursor: pointer;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;  /*the height of 1 line of text*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    float: right;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border: 1px solid #dfe1e5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgba(230, 244, 208, 0.4),rgba(243, 232, 194, 0.4)),url(m.jpg);
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    margin: 0.5rem;
+}
+  
+a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+a:hover:not(.logo-a) {
+    background-color:#0ba30d;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.btn {
+    margin-left: 4px;
+    margin-right: 4px;
+    background: #dfe1e5;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.img-txt{
+    display: flex;
+  align-items: center;
+}
+
+.img1{
+    margin-right: 10px;
+    width: 450px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.img2{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 450px;
+    height: 250px;
+}
+.txt-img{
+    display: flex;
+  align-items: center;
+}
+.prg1{
+    text-align: center;
+    margin-top: 10px;
+}
+.final{
+    text-align: center;
+    margin-top: 20px;
+}
+ .back{
+    background-image:linear-gradient(rgba(100, 208, 136, 0.4),rgba(119, 173, 61, 0.4));
+ }
+ .img3{
+    width: 450px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px; 
+}
+
+
+/* Styles for screens smaller than 768px responsive*/
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo-wrapper {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  
+    .logo-img {
+      width: 30%;
+      margin-top: 2%;
+    }
+    .search-input {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .side-header {
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+    
+      .menu {
+        margin-top: 20px;
+      }
+    
+      .menu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu li {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+
+    /* dropdown pt cos si notificari */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #105712;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: #f2f2f2;
+    }
+    
+    .not-img:hover {
+      background-color: #0ba30d;
+    
+    }
+    .dropdown2 {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content2 {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #105712;
+    }
+    
+    .dropdown2:hover .dropdown-content2 {
+      display: block;
+      background-color: #f2f2f2;
+    }
+    .shopping-cart-img:hover {
+      background-color: #0ba30d;
+    }

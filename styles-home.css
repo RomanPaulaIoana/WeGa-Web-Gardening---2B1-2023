@@ -134,6 +134,8 @@ a:hover:not(.logo-a) {
 .menu a.active{
   background-color: #333;
   /* background-color: #0d5307; */
+  /* transition: all 0.2s ease-in-out; */
+  /* opacity: 0.8; */
   color: #0ba30d;
   border-radius: 5px;
 }
@@ -209,17 +211,21 @@ a:hover:not(.logo-a) {
  @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    /* align-items: center; */
   }
 
   .logo-wrapper {
     margin-top: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 
   .logo-img {
+    display: block;
     width: 30%;
     margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .search-input {

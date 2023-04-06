@@ -7,7 +7,6 @@
 
     <body>
         <div class="header-wrapper">
-            <!-- <div class="header-upper"> -->
                 <header class="header">
                     <div class="logo-wrapper">
                         <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="logo-image.png"></a>
@@ -32,30 +31,19 @@
                           <a href="#">The cart is empty</a>
                         </div>
                       </div>
-
                     </div>
                 </header>
-            <!-- </div> -->
         
             <div class="menu">
-                <ul>
-                  <li>
                     <a href="home-not-logged.html">H O M E</a>
-                  </li>
-                  <li>
                     <a href="shop.html">S H O P</a>
-                  </li>
-                  <li>
                     <a href="about.html">A B O U T</a>
-                  </li>
-                  <li>
-                    <a href="help.html">H E L P</a>
-                  </li>
-                </ul>
+                    <a class="active" href="help.html">H E L P</a>
               </div>
               <div class="text">
                 <img class="text-img" src="1234.png">
             </div>
+
             <h2>FREQUENT QUESTIONS:</h2>
             <div class="faq-table">
               <div class="faq-question" onclick="toggleAnswer(1)">How do I track my flower delivery?</div>
@@ -74,6 +62,7 @@
               <div class="faq-answer" id="answer5">You will receive a confirmation email once your order has been successfully placed.</div>
             </div>
         </div>
+
         <script>function toggleAnswer(num) {
           var answer = document.getElementById("answer" + num);
           if (answer.style.display === "none") {

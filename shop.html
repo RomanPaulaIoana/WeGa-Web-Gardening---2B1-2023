@@ -2,25 +2,28 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
   <link rel="stylesheet" href="styles/style-shop.css">
 </head>
 
 <body>
-  <!-- <div class="header-wrapper"> -->
   <header class="header">
     <div class="logo-wrapper">
-      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png"></a>
+      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
     </div>
     <input class="search-input" type="text" placeholder="search" />
 
     <div class="side-header">
       <div class="account-div">
         <a class="account-a" href="login.html">
-          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png">
+          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
         </a>
       </div>
       <div class="dropdown">
-        <img class="not-img" src="styles/resources/not.png">
+        <img class="not-img" src="styles/resources/not.png" alt="notifications">
         <div class="dropdown-content">
           <a href="#">Notification 1</a>
           <a href="#">Notification 2</a>
@@ -29,7 +32,8 @@
       </div>
       <div class="dropdown2">
         <img class="shopping-cart-img"
-          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png">
+          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+          alt="shopping cart">
         <div class="dropdown-content2">
           <a href="#">The cart is empty</a>
         </div>
@@ -43,12 +47,12 @@
     <a href="about.html">A B O U T</a>
     <a href="help.html">H E L P</a>
   </div>
-  <!-- </div>  -->
+
   <div class="filter-dropdown">
     <button onclick="FilterFunction()" class="filter-btn">FILTER</button>
     <div id="filterDropdown" class="dropdown-fcontent">
       <input type="text" placeholder="Search.." id="filterInput" onkeyup="filterFunction()">
-      <a href="#flower name">Flower name</a>
+      <a href="#flowerName">Flower name</a>
       <a href="#rating">Rating</a>
     </div>
   </div>
@@ -81,9 +85,9 @@
     <button onclick="myFunction()" class="sortby-btn">SORT BY</button>
     <div id="myDropdown" class="dropdown-scontent">
       <input type="text" placeholder="Search.." id="myInput" onkeyup="sortFunction()">
-      <a href="#price low to high">Price:Low to High</a>
-      <a href="#price high to low">Price:High to Low</a>
-      <a href="#best sellers">Best Sellers</a>
+      <a href="#priceLowToHigh">Price:Low to High</a>
+      <a href="#priceHighToLow">Price:High to Low</a>
+      <a href="#bestSellers">Best Sellers</a>
       <a href="#newest">Newest</a>
     </div>
   </div>

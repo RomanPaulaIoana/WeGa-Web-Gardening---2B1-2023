@@ -17,7 +17,6 @@ html {
 }
 
 .logo-wrapper {
-    flex: 1;
     text-align: start;
   }
 
@@ -91,8 +90,8 @@ a {
     font-size: 18px;
 }
   
-a:hover:not(.logo-a) {
-    background-color:#0ba30d;
+a:hover:not(.logo-a, .account-a) {
+  background-color:#0ba30d;
     color: #fff;
     border-radius: 5px;
 }
@@ -104,33 +103,13 @@ a:hover:not(.logo-a) {
 }
 
 /* dropdown [shopping cart & notifications] */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #105712;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #f2f2f2;
-}
-
-.not-img:hover {
-  background-color: #0ba30d;
-  border-radius: 5px;
-}
-
+.dropdown,
 .dropdown2 {
   position: relative;
   display: inline-block;
 }
 
+.dropdown-content,
 .dropdown-content2 {
   display: none;
   position: absolute;
@@ -138,11 +117,14 @@ a:hover:not(.logo-a) {
   background-color: #105712;
 }
 
+.dropdown:hover .dropdown-content,
 .dropdown2:hover .dropdown-content2 {
   display: block;
   background-color: #f2f2f2;
 }
 
+.account-img:hover,
+.not-img:hover,
 .shopping-cart-img:hover {
   background-color: #0ba30d;
   border-radius: 5px;

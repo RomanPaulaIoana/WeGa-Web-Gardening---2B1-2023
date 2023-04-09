@@ -18,7 +18,7 @@ html {
 }
 
 .logo-wrapper {
-    flex: 1;
+    /* flex: 1; */
     text-align: start;
   }
 
@@ -125,7 +125,7 @@ a {
     font-size: 18px;
 }
   
-a:hover:not(.logo-a) {
+a:hover:not(.logo-a, .account-a, .grid-item) {
     background-color: #0ba30d;
     color: #fff;
     border-radius: 5px;
@@ -159,36 +159,23 @@ a:hover:not(.logo-a) {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(54, 116, 75, 0.4); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.613);
+  }
+
+  .grid-item a:hover {
+    border-radius: 25px;
   }
   
   /* dropdown [shopping cart & notifications] */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #105712;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    background-color: #f2f2f2;
-  }
-  
-  .not-img:hover {
-    background-color: #0ba30d;
-    border-radius: 5px;
-  }
-
+  .dropdown,
   .dropdown2 {
     position: relative;
     display: inline-block;
   }
   
+  .dropdown-content,
   .dropdown-content2 {
     display: none;
     position: absolute;
@@ -196,15 +183,40 @@ a:hover:not(.logo-a) {
     background-color: #105712;
   }
   
+  .dropdown:hover .dropdown-content,
   .dropdown2:hover .dropdown-content2 {
     display: block;
     background-color: #f2f2f2;
   }
-
+  
+  .account-img:hover,
+  .not-img:hover,
   .shopping-cart-img:hover {
     background-color: #0ba30d;
     border-radius: 5px;
   }
+
+  /* .dropdown2 {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  /* .dropdown-content2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #105712;
+  } */
+  
+  /* .dropdown2:hover .dropdown-content2 {
+    display: block;
+    background-color: #f2f2f2;
+  } */
+
+  /* .shopping-cart-img:hover {
+    background-color: #0ba30d;
+    border-radius: 5px;
+  } */
 
 
   /* Styles for screens smaller than 768px responsive*/

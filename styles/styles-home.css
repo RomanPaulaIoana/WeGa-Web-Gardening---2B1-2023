@@ -84,7 +84,7 @@ cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
-    background-image: linear-gradient(rgba(230, 244, 208, 0.4),rgba(243, 232, 194, 0.4)),url(m.jpg);
+    background-image: linear-gradient(rgba(230, 244, 208, 0.4),rgba(243, 232, 194, 0.4)),url(resources/m.jpg);
 }
 
 /* .btn {

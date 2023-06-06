@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help</title>
+  <link rel="stylesheet" href="styles/style-help.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+    </div>
+    <input class="search-input" type="text" placeholder="search" />
+
+    <div class="side-header">
+      <div class="account-div">
+        <a class="account-a" href="login.html">
+          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
+        </a>
+      </div>
+      
+      <div class="favorite-a">
+        <a href="favorite.html">
+          <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
+        </a>
+      </div>
+      <div class="dropdown2">
+        <img class="shopping-cart-img"
+          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+          alt="shopping cart">
+      </div>
+    </div>
+  </header>
+
+  <div class="menu">
+    <a href="home-not-logged.html">H O M E</a>
+    <a href="shop.html">S H O P</a>
+    <a href="about.html">A B O U T</a>
+    <a class="active" href="help.html">H E L P</a>
+  </div>
+  <div class="help-image">
+    <img src="styles\resources\help.png" alt="Imagine">
+  </div>
+  <div class="bar"></div> 
+  <div class="cube-container">
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\Contact us-amico.png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>You can call at the following phone numbers: 0768586645 / 0333954793 or you can send a email at plant_palooza@gmail.com</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>C O N T A C T</strong></p>
+    </div>
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\In no time-pana.png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>When you place the order, you will be notified by email about the order number and dates, but you will also be able to check the status of the order on the shopping cart page if you create an account</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>O R D E R</strong></p>
+    </div>
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\Refund-rafiki.png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>if the order arrives damaged, you will be able to receive the money back in a maximum of 7 days</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>R E F U N D</strong></p>
+    </div>
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\Drone Delivery-rafiki (1).png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>Regarding the transport, you will be kept up to date by SMS and email regarding the status of the order. Additionally, you can check the status by accessing the courier company's website</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>D E L I V E R Y</strong></p>
+    </div>
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\Broken light bulb-amico.png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>If you encounter problems regarding the interaction with our site, you can contact us through the form at the end of the page and in the shortest time a consultant will contact you and help you solve the problem.</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>P R O B L E M S</strong></p>
+    </div>
+    <div class="cube-wrapper">
+      <div class="cube" onclick="rotateCube(this)">
+        <div class="face front">
+          <img src="styles\resources\Blooming-amico.png" alt="Imagine 1">
+        </div>
+        <div class="face back">
+          <p>When you create an account, you will be able to add your own crops in the CROPS section, but you will also benefit from advice on their care</p>
+        </div>
+      </div>
+      <p class="image-title"><strong>G A R D E N I N G</strong></p>
+    </div>
+  </div>
+  <div class="bar"></div> 
+  <div class="help-end">
+    <img src="styles\resources\Search engines-bro.png" alt="Imagine 1">
+    <div class="title">
+      <h2>Didn't find what you were looking for?</h2>
+      <h3>You can fill out the form below to receive a response as quickly as possible.</h3>
+    </div>
+  </div>
+  <script>
+ function rotateCube(cube) {
+  cube.style.transform = 'rotateY(180deg)';
+}
+  </script>
+</body>
+
+
+</html>

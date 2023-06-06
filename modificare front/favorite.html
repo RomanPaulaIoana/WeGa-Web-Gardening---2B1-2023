@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/styles-favorite.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+          <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+        </div>
+        <input class="search-input" type="text" placeholder="search" />
+    
+        <div class="side-header">
+          <div class="account-div">
+            <a class="account-a" href="login.html">
+              <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
+            </a>
+          </div>
+          
+          <div class="favorite-a">
+            <a href="favorite.html">
+              <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
+            </a>
+          </div>
+          <div class="dropdown2">
+            <img class="shopping-cart-img"
+              src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+              alt="shopping cart">
+          </div>
+        </div>
+      </header>
+  <div class="menu">
+    <a class="active" href="home-not-logged.html">H O M E</a>
+    <a href="shop.html">S H O P</a>
+    <a href="about.html">A B O U T</a>
+    <a href="help.html">H E L P</a>
+  </div>
+   <div class="heading">
+      <h3><strong>W I S H L I S T</strong></h3>
+   </div>
+   <div class="wishlist">
+      <h1 class="title">Products added</h1>
+      <div class="products">
+        <div class="box-container">
+          <div class="box">
+            <div class="name">
+              <a href="pagina_plantei.html" class="product-name"><strong>Hellebore</strong></a>
+            </div>
+            <img src="styles\resources\Hellebore.jpg" alt="" class="image">
+            <div class="price">$19.99</div>
+            <input type="number" name="product_quantity" value="1" min="0" class="qty">
+            <input type="submit" value="Add to Cart" name="add_to_cart" class="btn">
+          </div>
+          <div class="box">
+            <div class="name">
+              <a href="pagina_plantei.html" class="product-name"><strong>Forsythia</strong></a>
+            </div>
+            <img src="styles\resources\Forsythia.jpg" alt="" class="image">
+            <div class="price">$12.99</div>
+            <input type="number" name="product_quantity" value="1" min="0" class="qty">
+            <input type="submit" value="Add to Cart" name="add_to_cart" class="btn">
+          </div>
+          <div class="box">
+            <div class="name">
+              <a href="pagina_plantei.html" class="product-name"><strong>Bluebell</strong></a>
+            </div>
+            <img src="styles\resources\CommonBluebell.jpg" alt="" class="image">
+            <div class="price">$12.99</div>
+            <input type="number" name="product_quantity" value="1" min="0" class="qty">
+            <input type="submit" value="Add to Cart" name="add_to_cart" class="btn">
+          </div>
+    </div>
+    <div class="wishlist-total">
+        <p>grand total: <span>$0/-</span></p>
+        <a href="shop.php" class="option-btn">CONTINUE SHOPPING</a>
+        <a href="shop.php" class="option-btn">DELETE ALL</a>
+
+     </div>
+</head>
+</body>
+</html>

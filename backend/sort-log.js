@@ -2,7 +2,7 @@
 $(document).ready(function() {
     function loadProducts() {
       $.ajax({
-        url: "get_flowers.php",
+        url: "get_flowers-log.php",
         type: "GET",
         dataType: "html",
         success: function(data) {
@@ -15,9 +15,9 @@ $(document).ready(function() {
       });
     }
   
-   function loadSortedProducts(sortField, sortOrder) {
+    function loadSortedProducts(sortField, sortOrder) {
       $.ajax({
-        url: "sort.php",
+        url: "sort-log.php",
         type: "GET",
         data: { sortField: sortField, sortOrder: sortOrder },
         dataType: "html",
@@ -33,10 +33,10 @@ $(document).ready(function() {
   
     $(".sort-dropdown ul").on("click", "li a.sort-option", function(e) {
       e.preventDefault();
-      var sortOption = $(this).attr("class").split(" ")[1]; 
+      var sortOption = $(this).attr("class").split(" ")[1]; // Obtine clasa optiunii de sortare
   
-      var sortField = ""; 
-      var sortOrder = ""; 
+      var sortField = ""; // Campul de sortare
+      var sortOrder = ""; // Directia de sortare
   
       if (sortOption === "price_asc") {
         sortField = "Price";
@@ -57,8 +57,6 @@ $(document).ready(function() {
   
     loadProducts();
   });
+ 
 
-  function showMessage() {
-    alert("You cannot access the Wishlist because you are not logged in.");
-  }
 

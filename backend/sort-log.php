@@ -1,6 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <?php
+
 include 'config.php';
 
 if (isset($_GET['sortField']) && isset($_GET['sortOrder'])) {
@@ -9,16 +10,16 @@ if (isset($_GET['sortField']) && isset($_GET['sortOrder'])) {
 
   $sortField = mysqli_real_escape_string($conn, $sortField);
 
-   $sql = "SELECT * FROM Flowers ORDER BY $sortField $sortOrder";
+  $sql = "SELECT * FROM Flowers ORDER BY $sortField $sortOrder";
 } else {
   $sortField = 'ID_flower';
   $sortOrder = 'ASC';
 
-   $sql = "SELECT * FROM Flowers ORDER BY $sortField $sortOrder";
+  $sql = "SELECT * FROM Flowers ORDER BY $sortField $sortOrder";
 }
 
+ $result = $conn->query($sql);
 
-  $result = $conn->query($sql);
 
   $html = '';
   if ($result->num_rows > 0) {
@@ -28,8 +29,8 @@ if (isset($_GET['sortField']) && isset($_GET['sortOrder'])) {
       $html .= '<img src="' . $row['ImageURL'] . '" alt="' . $row['Name'] . '" class="image" />';
       $html .= '<div class="price">$' . $row['Price'] . '</div>';
       $html .= '<input type="number" name="product_quantity" value="1" min="0" class="qty" />';
-     $html .= '<input type="submit" value="Add to Wishlist" name="add_to_wishlist" class="option-btn" onclick="showMessage()" />';
-     $html .= '<input type="submit" value="Add to Cart" name="add_to_cart" class="option-btn" onclick="showMessage()" />';
+      $html .= '<input type="submit" value="Add to Wishlist" name="add_to_wishlist" class="option-btn" />';
+      $html .= '<a class="btn add-to-cart" data-product-id="' . $row['ID_flower'] . '">Add to Cart</a>';
       $html .= '</div>';
     }
   }
@@ -39,6 +40,7 @@ if (isset($_GET['sortField']) && isset($_GET['sortOrder'])) {
   } else {
     echo "Nu există produse disponibile.";
   }
+
 
   $conn->close();
 

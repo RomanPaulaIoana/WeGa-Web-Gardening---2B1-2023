@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="styles/style-shop.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="favorite.js"></script>
+  <script src="sort.js"></script>
+  <script src="cart.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+    </div>
+    <input class="search-input" type="text" placeholder="search" />
+
+    <div class="side-header">
+      <div class="account-div">
+        <a class="account-a" href="login.html">
+          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
+        </a>
+      </div>
+      
+      <div class="favorite-a">
+        <a href="favorite.html">
+          <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
+        </a>
+      </div>
+      <div class="dropdown2">
+        <a href="cart.html">
+        <img class="shopping-cart-img"
+          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+          alt="shopping cart">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="menu">
+    <a href="home-not-logged.html">H O M E</a>
+    <a class="active" href="shop.html">S H O P</a>
+    <a href="about.html">A B O U T</a>
+    <a href="help.html">H E L P</a>
+  </div>
+  <div class="filter-sort-container">
+    <div class="filter-container">
+      <button class="filter-button">Filter By</button>
+      <div class="filter-dropdown">
+        <ul>
+          <li><a href="#">Color</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="sort-container">
+      <button class="sort-button">Sort By</button>
+      <div class="sort-dropdown">
+        <ul>
+          <li><a href="#" class="sort-option price_asc">Price: Low to High</a></li>
+          <li><a href="#" class="sort-option price_desc">Price: High to Low</a></li>
+          <li><a href="#" class="sort-option name_asc">Name: A to Z</a></li>
+          <li><a href="#" class="sort-option name_desc">Name: Z to A</a></li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="products">
+    <div class="box-container">
+      <?php include 'get_flowers.php'; ?>
+    </div>
+  </div> 
+  
+
+ 
+</body>
+
+</html>

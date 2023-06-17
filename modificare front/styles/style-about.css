@@ -203,7 +203,7 @@ border-radius: 5px;
     margin-top: 15px; 
 }
 
- /* Styles for screens smaller than 768px responsive*/
+ /*  responsive*/
  @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -246,6 +246,7 @@ border-radius: 5px;
   align-items: center;
   margin-bottom: 40px;
 }
+
 
 .image {
   flex: 1;
@@ -386,4 +387,36 @@ border-radius: 5px;
   border: 1px solid #725f71; 
   display: flex; 
   justify-content: center; 
+}
+
+.message-box {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #e54885;
+}
+
+.alert_succes {
+  background-color: #42ba96;
+  color: #ffffff;
+  padding: 7px;
+  margin-bottom: 5px;
+  border: 2px solid #295447;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.alert_danger {
+  background-color:#eb2e3e9d ;
+  color: #ffffff;
+  padding: 7px;
+  margin-bottom: 5px;
+  border: 2px solid #9c222c9d;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
 }

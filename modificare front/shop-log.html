@@ -9,34 +9,32 @@
   <link rel="stylesheet" href="styles/style-shop.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <!-- <script src="favorite.js"></script>-->
- <script src="sort.js"></script>
+  <script src="sort-log.js"></script>
 
 
-  
 </head>
 
 <body>
   <header class="header">
     <div class="logo-wrapper">
-      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+      <a class="logo-a" href="home-logged-user.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
     </div>
     <input class="search-input" type="text" placeholder="search" />
 
     <div class="side-header">
       <div class="account-div">
-        <a class="account-a" href="login.html">
+        <a class="account-a" href="login-log.php">
           <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
         </a>
       </div>
       
       <div class="favorite-a">
-        <a href="login.html">
+        <a href="favorite-log.html">
           <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
         </a>
       </div>
       <div class="dropdown2">
-        <a href="login.html">
+        <a href="cart-log.html">
         <img class="shopping-cart-img"
           src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
           alt="shopping cart">
@@ -45,10 +43,11 @@
     </div>
   </header>
   <div class="menu">
-    <a href="home-not-logged.html">H O M E</a>
-    <a class="active" href="shop.html">S H O P</a>
-    <a href="about.html">A B O U T</a>
-    <a href="help.html">H E L P</a>
+    <a href="home-logged-user.html">H O M E</a>
+    <a class="active" href="shop-log.html">S H O P</a>
+    <a href="about-log.html">A B O U T</a>
+    <a href="help-log.html">H E L P</a>
+    <a href=https://www.google.com>C R O P S</a>
   </div>
   <div class="filter-sort-container">
     <div class="filter-container">
@@ -78,7 +77,7 @@
   </div>
   <div class="products">
     <div class="box-container">
-      <?php include 'get_flowers.php'; ?>
+      <?php include 'get_flowers-log.php'; ?>
     </div>
   </div> 
   

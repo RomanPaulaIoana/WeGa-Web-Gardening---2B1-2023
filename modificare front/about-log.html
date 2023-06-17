@@ -12,24 +12,24 @@
 <body>
   <header class="header">
     <div class="logo-wrapper">
-      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+      <a class="logo-a" href="home-logged-user.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
     </div>
     <input class="search-input" type="text" placeholder="search" />
 
     <div class="side-header">
       <div class="account-div">
-        <a class="account-a" href="login.html">
+        <a class="account-a" href="login-log.php">
           <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
         </a>
       </div>
       
       <div class="favorite-a">
-        <a href="login.html">
+        <a href="favorite-log.html">
           <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
         </a>
       </div>
       <div class="dropdown2">
-        <a href="login.html">
+        <a href="cart-log.html">
         <img class="shopping-cart-img"
           src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
           alt="shopping cart">
@@ -38,10 +38,11 @@
     </div>
   </header>
   <div class="menu">
-    <a href="home-not-logged.html">H O M E</a>
-    <a href="shop.html">S H O P</a>
-    <a class="active" href="about.html">A B O U T</a>
-    <a href="help.html">H E L P</a>
+    <a href="home-logged-user.html">H O M E</a>
+    <a href="shop-log.html">S H O P</a>
+    <a class="active" href="about-log.html">A B O U T</a>
+    <a href="help-log.html">H E L P</a>
+    <a href=https://www.google.com>C R O P S</a>
   </div>
   <div class="flex">
     <div class="content">
@@ -124,7 +125,7 @@
         <h3>Subscribe to Our Newsletter</h3>
         <p>Stay updated with the latest news and promotions:</p>
         <?php include 'about.php'; ?>
-                    <form action="about.php" method="post">
+                    <form action="about-log.php" method="post">
                         <input type="email" class="email" name="email" placeholder="Enter Your Email" <?php if (isset($_POST['submit'])) { echo 'value="' . htmlspecialchars($_POST['email']) . '"'; } ?> 
                         <button name="submit" class="btn" type="submit">Subscribe</button>
                     </form>

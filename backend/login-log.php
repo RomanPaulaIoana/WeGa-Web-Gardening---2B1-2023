@@ -1,24 +1,9 @@
 <?php
-
+session_start();
 include 'config.php';
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$userId = 1; 
-$sql = "SELECT name, email FROM users ORDER BY id DESC LIMIT 1";
-$result = $conn->query($sql);
-
-
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $username = $row["name"];
-    $email = $row["email"]; 
-} else {
-    $username = "N/A";
-    $email = "N/A"; 
-}
+$username = $_SESSION['name'] ?? "N/A";
+$email = $_SESSION['email'] ?? "N/A";
 
 
 $conn->close();

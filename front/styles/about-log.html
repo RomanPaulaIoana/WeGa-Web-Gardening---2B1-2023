@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="styles/style-about.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a class="logo-a" href="home-logged-user.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+    </div>
+    <form action="search.php" method="GET">
+      <input class="search-input" type="text" name="search" placeholder="search" />
+    </form>
+
+    <div class="side-header">
+      <div class="account-div">
+        <a class="account-a" href="login-log.php">
+          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
+        </a>
+      </div>
+      
+      <div class="favorite-a">
+        <a href="favorite-log.php">
+          <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
+        </a>
+      </div>
+      <div class="dropdown2">
+        <a href="cart-log.php">
+        <img class="shopping-cart-img"
+          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+          alt="shopping cart">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="menu">
+    <a href="home-logged-user.html">H O M E</a>
+    <a href="shop-log.php">S H O P</a>
+    <a class="active" href="about-log.html">A B O U T</a>
+    <a href="help-log.html">H E L P</a>
+    <a href="crops.html"> C R O P S</a>
+  </div>
+  <div class="flex">
+    <div class="content">
+        <h3>Who We Are?</h3>
+        <ul>
+            <li>
+                <div class="feature-box">
+                    <div class="feature-title"><strong>Passion for Spring Flowers</strong></div>
+                    <div class="feature-description">We are dedicated to celebrating the beauty of spring flowers.</div>
+                </div>
+            </li>
+            <li>
+                <div class="feature-box">
+                    <div class="feature-title"><strong>Expert Florists</strong></div>
+                    <div class="feature-description">Our team of skilled florists ensures exceptional quality and stunning arrangements.</div>
+                </div>
+            </li>
+            <li>
+                <div class="feature-box">
+                    <div class="feature-title"><strong>Sustainable Practices</strong></div>
+                    <div class="feature-description">We prioritize eco-friendly cultivation and packaging methods.</div>
+                </div>
+            </li>
+            <li>
+                <div class="feature-box">
+                    <div class="feature-title"><strong>Customer Satisfaction</strong></div>
+                    <div class="feature-description">We strive to exceed customer expectations with our products and services.</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="styles/resources/about-img-1.jpg" alt="">
+    </div>
+</div>
+
+<div class="flex">
+    <div class="image">
+        <img src="styles/resources/about-img-1.png" alt="">
+    </div>
+    <div class="content">
+      <h3>What We Provide?</h3>
+      <ul>
+          <li>
+              <div class="feature-box">
+                  <div class="feature-title"><strong>Wide Variety</strong></div>
+                  <div class="feature-description">Explore a diverse collection of spring flowers.</div>
+              </div>
+          </li>
+          <li>
+              <div class="feature-box">
+                  <div class="feature-title"><strong>Exceptional Quality</strong></div>
+                  <div class="feature-description">Enjoy the highest quality blooms.</div>
+              </div>
+          </li>
+          <li>
+              <div class="feature-box">
+                  <div class="feature-title"><strong>Convenient Shopping</strong></div>
+                  <div class="feature-description">Easily browse and purchase flowers online.</div>
+              </div>
+          </li>
+          <li>
+              <div class="feature-box">
+                  <div class="feature-title"><strong>Crop Management Tools</strong></div>
+                  <div class="feature-description">Effectively manage your flower crops.</div>
+              </div>
+          </li>
+          <li>
+              <div class="feature-box">
+                  <div class="feature-title"><strong>Prompt Delivery</strong></div>
+                  <div class="feature-description">Enjoy timely and carefully packaged flower delivery.</div>
+              </div>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="newsletter-form">
+  <div class="flex">
+    <div class="content">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest news and promotions:</p>
+        <?php include 'about.php'; ?>
+                    <form action="about-log.php" method="post">
+                        <input type="email" class="email" name="email" placeholder="Enter Your Email" <?php if (isset($_POST['submit'])) { echo 'value="' . htmlspecialchars($_POST['email']) . '"'; } ?> 
+                        <button name="submit" class="btn" type="submit">Subscribe</button>
+                    </form>
+      <div id="message-container" class="message-box">
+          <?php echo $message; ?>
+      </div>
+      
+      
+    </div>
+    
+
+
+    <div class="image">
+        <img src="styles/resources/about-img-3.jpg" alt="">
+    </div>
+</div>
+</div>
+<div class="title">
+  <h4>Other services</h4>
+</div>
+<div class="icon-section">
+  <div class="icon">
+    <img src="styles/resources/freesh.png" alt="Free Shipment">
+    <h4>Free Shipment</h4>
+    <p>Enjoy free shipping on orders over $50.</p>
+  </div>
+  <div class="icon">
+    <img src="styles/resources/service.png" alt="24/7 Assistance">
+    <h4>24/7 Assistance</h4>
+    <p>We provide round-the-clock assistance for any questions or concerns.</p>
+  </div>
+  <div class="icon">
+    <img src="styles/resources/fast.png" alt="Fast Delivery">
+    <h4>Fast Delivery</h4>
+    <p>Get your flowers delivered quickly and efficiently.</p>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var urlParams = new URLSearchParams(window.location.search);
+    var message = urlParams.get('message');
+
+    var contentElements = document.querySelectorAll('.content');
+
+    if (message !== null && message !== '') {
+      var msgContainer = document.createElement('div');
+      if (message.includes('alert_danger')) {
+        msgContainer.className = 'alert_danger';
+      } else if (message.includes('alert_success')) {
+        msgContainer.className = 'alert_success';
+      }
+      msgContainer.innerHTML = message;
+
+      // Accesează ultimul element cu clasa "content" și adaugă mesajul în interiorul său
+      var lastContent = contentElements[contentElements.length - 1];
+      if (lastContent) {
+        lastContent.appendChild(msgContainer);
+      }
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

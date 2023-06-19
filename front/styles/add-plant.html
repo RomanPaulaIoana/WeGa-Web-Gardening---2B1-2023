@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ADD PLANT</title>
+  <link rel="stylesheet" href="styles/add-plant.css">
+</head>
+<body>
+  <!-- Containerul principal -->
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img class="navbar-logo" src="styles/resources/logo-image.png" alt="Logo-ul companiei">
+    </div>
+
+    <!-- Bara de navigare -->
+    <div class="navbar">
+      <div class="navbar-button">
+        <a href="home-logged-user.html">H O M E</a>
+        <a href="shop-log.html"> S H O P</a>
+        <a href="about-log.html"> A B O U T</a>
+        <a href="help-log.html"> H E L P</a>
+        <a href="crops.html"> C R O P S</a>
+      </div>
+    </div>
+
+    <!-- Coloana din partea stângă -->
+    <div class="sidebar">
+      <div class="sidebar-button">
+        <a href="help-log.html"> MY GARDEN</a>
+      </div>
+      <div class="sidebar-button">
+        <a href="help-log.html"> ADD PLANT</a>
+      </div>
+    </div>
+        <div class="content">
+          <div class="form-section">
+            <h2>Add Plant</h2>
+            <form action="save_plant.php" method="POST" enctype="multipart/form-data">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div>
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" required></textarea>
+              </div>
+              <div>
+                <label for="growth_period">Growth Period:</label>
+                <input type="text" name="growth_period" id="growth_period" required>
+              </div>
+              <div class="file-upload">
+                <label for="image_upload">Image Upload:</label>
+                <input type="file" name="image_upload" id="image_upload" accept="image/*" required>
+              </div>
+              <div>
+                <input type="submit" value="Save" class="submit-btn">
+              </div>
+            </form>
+          </div>
+        </div>
+      
+        <script>
+            const imageUpload = document.getElementById('image_upload');
+          
+            imageUpload.addEventListener('change', function() {
+              const file = this.files[0];
+              if (file) {
+                // Imaginile nu vor fi afișate
+              }
+            });
+            </script>
+          
+      </body>
+      </html>

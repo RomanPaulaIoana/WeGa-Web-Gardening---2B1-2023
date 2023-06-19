@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style_login.css">
+</head>
+
+<body>
+
+    <!-- form section start -->
+    <section class="w3l-mockup-form">
+        <div class="container">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-mockup">
+        
+                    <div class="w3l_form align-self">
+                        <div class="left_grid_info">
+                            <img src="styles/resources/woman-hand-holding-peony-roses.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content-wthree">
+                        <h2>Login Now</h2>
+                        <?php echo $msg; ?>
+                        <?php if (!empty($msg)) { echo $msg; } ?>
+                        <form action="login.php" method="post" id="login-form">
+                            <input type="email" class="email" name="email" placeholder="Enter Your Email" <?php if (isset($_POST['submit'])) { echo 'value="' . htmlspecialchars($_POST['email']) . '"'; } ?> 
+                            <input type="password" class="password" name="password" placeholder="Enter Your Password" required>
+                            <button name="submit" class="btn" type="submit">Login</button>
+                        </form>
+                        <div class="social-icons">
+                            <p>Create Account! <a href="register.html">Register</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //form -->
+        </div>
+    </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          var urlParams = new URLSearchParams(window.location.search);
+          var msg = urlParams.get('msg');
+      
+          var contentWthree = document.querySelector('.content-wthree');
+      
+          if (msg !== null && msg !== '') {
+            var msgContainer = document.createElement('div');
+            if (msg.includes('alert_danger')) {
+              msgContainer.className = 'alert_danger';
+            }
+            msgContainer.innerHTML = decodeURIComponent(msg);
+      
+            contentWthree.insertBefore(msgContainer, contentWthree.firstChild);
+          }
+        });
+    </script>
+
+</body>
+</html>

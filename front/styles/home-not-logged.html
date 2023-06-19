@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/styles-home.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <a class="logo-a" href="home-not-logged.html"><img class="logo-img" src="styles/resources/logo-image.png" alt="Plant Palooza"></a>
+    </div>
+    <form action="search.php" method="GET">
+      <input class="search-input" type="text" name="search" placeholder="search" />
+    </form>
+    
+    <div class="side-header">
+      <div class="account-div">
+        <a class="account-a" href="login.html">
+          <img class="account-img" src="https://static.thenounproject.com/png/4038155-200.png" alt="account">
+        </a>
+      </div>
+      
+      <div class="favorite-a">
+        <a href="login.html">
+          <img class="fav-img" src="styles/resources/favorite.png" alt="favorite">
+        </a>
+      </div>
+      <div class="dropdown2">
+        <a href="login.html">
+        <img class="shopping-cart-img"
+          src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png"
+          alt="shopping cart">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="menu">
+    <a class="active" href="home-not-logged.html">H O M E</a>
+    <a href="shop.html">S H O P</a>
+    <a href="about.html">A B O U T</a>
+    <a href="help.html">H E L P</a>
+  </div>
+  <div class="header-image">
+    <img src="styles\resources\111.png" alt="Imagine">
+  </div>
+
+  <div class="title">
+    <h1>Our best sellers</h1>
+  </div> 
+  <div id="our-best-container" class="grid-wrapper">
+    <a href="#" class="button-view-details">View Details</a>
+  </div>
+  <div class="title">
+    <h4>Other products</h4>
+  </div>
+  <div id="other-products-container" class="grid-wrapper"></div>  
+  <div class="title">
+    <h5>Reviews</h5>
+  </div>
+  <div class="testimonial-box-container">
+    <div class="testimonial-box">
+        <div class="box-top">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="styles/resources/fake1.jpg" />
+                </div>
+                <div class="name-user">
+                    <strong>Lisa Jeon</strong>
+                    <span>@lisaaa</span>
+                </div>
+            </div>
+        </div>
+        <div class="client-comment">
+            <p>I came across this spring flower website, and I instantly fell in love with their amazing variety. The site's interface is intuitive and easy to navigate, allowing me to quickly find the flowers I desired. I was impressed by their extensive selection and the impeccable quality of the flowers. I ordered some bulbs from them, and they arrived in excellent and fresh condition. I also appreciated that the website offers a crop management tool, which helped me monitor and care for my plants.</p>
+        </div>
+    </div>
+    <div class="testimonial-box">
+        <div class="box-top">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="styles/resources/fake2.jpeg" />
+                </div>
+                <div class="name-user">
+                    <strong>Linda Smith</strong>
+                    <span>@lindasmt</span>
+                </div>
+            </div>
+        </div>
+        <div class="client-comment">
+            <p>This site is a paradise for spring flower lovers! I found a wide range of flowers here, from roses to daffodils and tulips. I placed an order for several flowers, and I was extremely pleased with the quality of the products received. The flowers were fresh and well-cared for, and their colors were vibrant and beautiful.If you're looking for high-quality spring flowers and an easy-to-use website, I highly recommend this site.</p>
+        </div>
+    </div>
+    <div class="testimonial-box">
+        <div class="box-top">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="styles/resources/fake3.jpg" />
+                </div>
+                <div class="name-user">
+                    <strong>Daniel Redclief</strong>
+                    <span>@DanielRedclief</span>
+                </div>
+            </div>
+        </div>
+        <div class="client-comment">
+            <p>Purchasing spring flowers from this site was a delightful experience. Their range of spring flowers is remarkable, and I was impressed to see so many options available. I was highly satisfied with the quality of the flowers I ordered. The packaging was excellent, protecting the flowers during transit, and they arrived in a fresh and intact state.</p>
+        </div>
+    </div>
+</div>
+  <script>
+    // Selectarea containerului pentru produsele dinamic încărcate
+const otherProductsContainer = document.getElementById('other-products-container');
+
+// Efectuarea unei cereri către server pentru a obține produsele
+fetch('get_flowers_otherprod.php')
+  .then(response => response.text())
+  .then(data => {
+    // Adăugarea conținutului în container
+    otherProductsContainer.innerHTML = data;
+  })
+  .catch(error => console.error(error));
+  
+  const ourBestContainer = document.getElementById('our-best-container');
+
+// Efectuarea unei cereri către server pentru a obține produsele cele mai vândute
+fetch('get_flowers_best.php')
+  .then(response => response.text())
+  .then(data => {
+    // Adăugarea conținutului în container
+    ourBestContainer.innerHTML = data;
+  })
+  .catch(error => console.error(error));
+  </script>
+  
+  
+</body>
+
+</html>
